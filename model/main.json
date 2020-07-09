@@ -1,6 +1,5 @@
 {
 	"types": [
-                
 		{
 			"id": "prodaja",
 			"nav": {
@@ -23,8 +22,9 @@
 		}
 	],
 	"catalog": [
-    {
-      "type":"prodaja",
+    {"type":"prodaja",
+     main:[{
+      
 	  "manufacturers": "Asus",
       "model":"VivoBook 15 X540UA-DM597T",
 	  "processor": "i3-6006U 4Gb",
@@ -37,7 +37,6 @@
 	},
 
 	{
-      "type":"prodaja",
 	  "manufacturers": "Asus",
       "model":"Zephyrus S GX531GXR",
 	  "processor": "i7-9750H 24GB",
@@ -50,7 +49,6 @@
 	},
 
 	{
-        "type":"prodaja",
 	  "manufacturers": "Asus",
       "model":"GL504GW",
 	  "processor":" i7-8750H 16Gb",
@@ -62,7 +60,6 @@
       "basket":"в корзину"
 	},
 	{
-        "type":"prodaja",
 	  "manufacturers": "Lenovo",
       "model":"Legion Y740-15T",
 	  "processor": "i5-8300H 8Gb",
@@ -75,7 +72,6 @@
 	},
 
 	{
-      "type":"prodaja",
 	  "manufacturers": "Lenovo",
       "model":"IdeaPad L340-15",
 	  "processor": "i5-10210U 8Gb",
@@ -87,7 +83,6 @@
       "basket":"в корзину"
 	},
 	{
-    "type":"prodaja",
 	  "manufacturers": "Lenovo",
       "model":"ThinkPad E14",
 	  "processor": "i7-8750H 16Gb",
@@ -99,7 +94,6 @@
       "basket":"в корзину"
 	},
 	{
-        "type":"prodaja",
 	  "manufacturers": "Apple",
       "model":"MacBook Air 2020 MWTJ2RU/A",
 	  "processor": "i3-1000NG4 8Gb",
@@ -110,8 +104,7 @@
       "cost":99000,
       "basket":"в корзину"
 	},
-	{
-      "type":"prodaja",
+	{,
 	  "manufacturers": "Apple",
       "model":"MacBook Pro 16 MVVK2RU/A",
 	  "processor": "i9-9880H  16Gb",
@@ -124,7 +117,6 @@
 	},
 
 	{
-        "type":"prodaja",
 	  "manufacturers": "Apple",
       "model":"MacBook Pro 2019 MV962RU/A",
 	  "processor": "i5-8279U 8Gb",
@@ -134,19 +126,23 @@
 	  "photo": "images/9.jpg",
       "cost": 145900,
       "basket":"в корзину"
-	},
-        	{
+	}
+    ],
+     
      "type":"sellnotebook",
+        main:[{
 	  "manufacturers": "Apple",
       "model":"APPLE MacBook Air 13 MQD32RU/A",
 	  "processor": "Intel Core i5 8192Mb",
 	  "memory": "SSD 128Gb",
 	  "videocard": " Intel HD Graphics 6000",
 	  "screen": "13.3",
-	  "photo": "images/9.jpg",
+	  "photo": "images/10.jpg",
       "cost": 66 799 ,
       "basket":"в корзину"
 	}
-	]
-	]
+              ]
+    }
+        ]
 }
+	
