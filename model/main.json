@@ -104,7 +104,7 @@
       "cost":99000,
       "basket":"в корзину"
 	},
-	{,
+	{
 	  "manufacturers": "Apple",
       "model":"MacBook Pro 16 MVVK2RU/A",
 	  "processor": "i9-9880H  16Gb",
@@ -115,7 +115,6 @@
       "cost": 230900,
       "basket":"в корзину"
 	},
-
 	{
 	  "manufacturers": "Apple",
       "model":"MacBook Pro 2019 MV962RU/A",
@@ -138,7 +137,7 @@
 	  "videocard": " Intel HD Graphics 6000",
 	  "screen": "13.3",
 	  "photo": "images/10.jpg",
-      "cost": 66 799 ,
+      "cost": 66799,
       "basket":"в корзину"
 	}
               ]

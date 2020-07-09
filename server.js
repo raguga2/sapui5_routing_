@@ -6,4 +6,4 @@ app.get('/', function(req, res) {
   res.sendfile('index.html');
 });
 app.listen(3221);
-console.log('Сервер запущен по адресу: http://localhost:3221/');
+console.log('Сервер запущен по адресу: http://localhost:3220/');
