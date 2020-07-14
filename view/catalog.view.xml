@@ -1,12 +1,68 @@
 <mvc:View 
   controllerName="namespace.controller.catalog"
   displayBlock="true"
+headerText="{i18n>mainistTitle}"
   xmlns="sap.m"
   xmlns:mvc="sap.ui.core.mvc">
-	<Page
-		title="Каталог">
-		<!-- Тут выводится список товаров.ю надо поменять список на набор тайлов. Чтоб было как в настоящих магазинах -->
-		<List
+
+    <Shell>
+		<App class="myAppDemoWT">
+			<pages>
+				<Page title="{i18n>sales_nootebook}">
+					<content> 
+					<Table id="idTable" items="{main>/Main}">
+							<columns>
+								<Column>
+									<Text text="Производители"/>
+								</Column>
+                               <Column>
+									<Text text="Модели"/>
+								</Column>
+								<Column>
+									<Text text="Процессор"/>
+								</Column>
+								<Column>
+									<Text text="Память"/>
+								</Column>
+								<Column>
+									<Text text="Видеокарта"/>
+								</Column>
+								<Column>
+									<Text text="Экран"/>
+								</Column>
+								<Column>
+									<Text text="Фото"/>
+								</Column>
+                                <Column>
+									<Text text="Стоимость"/>
+								</Column>
+                                 <Column>
+                                     <Image src="images/korzina.png" width="50px" height="50px"/>
+								</Column>
+							</columns>
+								<items>
+										<ColumnListItem type="Active">
+											<cells>
+												<Text text="{main>manufacturers}"></Text>
+                                                <Text text="{main>model}"></Text>
+												<Text text="{main>processor}"></Text>
+												<Text text="{main>memory}"></Text>
+												<Text text="{main>videocard}"></Text>
+												<Text text="{main>screen}"></Text>
+												<Image src="{main>photo}" width="80px" height="90px"/>
+                                                <Text text="{main>cost}"></Text>
+                                                <Button class="button1" text="{main>basket}"></Button>
+                                                
+											</cells>
+										</ColumnListItem>
+								</items>
+							</Table>
+					</content>
+				</Page>
+			</pages>
+		</App>
+	</Shell>
+    		<List
 			id='catalogList'
 			items="{main>/catalog}">
 			<StandardListItem
@@ -15,5 +71,5 @@
 				type='Active'
 				press="omCatalogItemPress"/>
 		</List>
-	</Page>
 </mvc:View>
+    

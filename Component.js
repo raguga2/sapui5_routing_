@@ -15,8 +15,9 @@ sap.ui.define(
 
       init: function () {
         // call the init function of the parent
-        UIComponent.prototype.init.apply(this, arguments); // it is obligatory(обязательно) to make the super call        
-
+        UIComponent.prototype.init.apply(this, arguments); // it is obligatory(обязательно) to make the super call  
+          
+          
         this.oMainModel = this.getModel('main'); // from manifest.json			
 				
         this.oRouter = this.getRouter(); 
@@ -27,7 +28,10 @@ sap.ui.define(
 				this._setMainmenu(); // формируем данные для главногог меню.
 				
       },
-			
+
+			// set data model
+
+
 			_setMainmenu: function(){
 				let that = this;
 				// Когда в модель подгрузятся даннве из файла JSON...
