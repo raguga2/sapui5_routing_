@@ -3,9 +3,10 @@
 sap.ui.define(
   [
     'sap/ui/core/UIComponent',
+    "sap/ui/model/json/JSONModel",
     'sap/m/MessageBox'
   ],
-  function(UIComponent, MessageBox) {
+  function(UIComponent,JSONModel, MessageBox) {
     //'use strict';
 
     return UIComponent.extend('namespace.Component', {
@@ -16,10 +17,9 @@ sap.ui.define(
       init: function () {
         // call the init function of the parent
         UIComponent.prototype.init.apply(this, arguments); // it is obligatory(обязательно) to make the super call  
+
           
-          
-        this.oMainModel = this.getModel('main'); // from manifest.json			
-				
+        this.oMainModel = this.getModel('main'); // from manifest.json						
         this.oRouter = this.getRouter(); 
 				this.oRouter.initialize(); // запускаем роутинг (берет настройки из манифеста)
         this.oRouter.attachBeforeRouteMatched(this._handleRout.bind(this)); // вообще не нужно, просто пример цепляния обрботчика события.
@@ -38,6 +38,7 @@ sap.ui.define(
 				this.oMainModel.dataLoaded().then(function(){			
 					// берем список категорий...
 					let aTypes = that.oMainModel.getProperty("/types");
+                    let aCatalog = that.oMainModel.getProperty("/catalog1")
 					// формирукм дополнительные пункты меню...
 					let aOtherMenuItems = [
 						{
@@ -60,6 +61,7 @@ sap.ui.define(
 					
 					// добавляем в модель свойство, в котором хранится массив пунктов мею
 					that.oMainModel.setProperty("/mainMenu", aMenu);
+                    that.oMainModel.setProperty("/mainCatalog", aCatalog);
 				});
 				
 			},

@@ -6,4 +6,5 @@
 	<Page
 		title="Корзина">
 	</Page>
+    
 </mvc:View>
